@@ -1,0 +1,20 @@
+<div class="container shadow-lg text-center w-25 my-5">
+    <h2 class="header py-3 fst-italic">Register Now!</h2>
+    <div class="register-form">
+        <div class="my-4">
+             <label class="w-25" for="name">Name:</label>
+             <input class="border-top-0 border-end-0 border-start-0 border-bottom-2" type="text" id="name" [(ngModel)]="name">
+        </div>
+        <div class="my-4">
+            <label class="w-25" for="age">Age:</label>
+            <input class="border-top-0 border-end-0 border-start-0 border-bottom-2" type="number" id="age" [(ngModel)]="age">
+        </div>
+        <div class="my-4">
+            <label class="w-25" for="email">Email:</label>
+            <input class="border-top-0 border-end-0 border-start-0 border-bottom-2" type="email" id="email" [(ngModel)]="email">
+       </div>
+        <div class="my-4">
+            <input (click)="FireNow()" class="btn px-3 py-2 border-2 btn-outline-danger my-4" type="button" value="Add">
+        </div>
+    </div>
+</div>

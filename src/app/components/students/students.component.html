@@ -1,0 +1,27 @@
+<div class="container text-center w-50 shadow-lg my-5">
+    <h2 class="header py-3 fst-italic">Users Table!</h2>
+    
+    <table class="table table-striped text-center table-bordered" style="table-layout: fixed; width: 100%;">
+        <thead>
+            <tr>
+             <th>Name</th>
+             <th>Age</th>
+             <th>Email</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            @for (std of students ; track std.name) {
+                <tr>
+                    <td>{{std.name}}</td>
+                    <td>{{std.age}}</td>
+                    <td>{{std.email}}</td>
+                    
+                </tr>
+            }
+            
+        </tbody>
+    </table>
+</div>
+
+
